@@ -4,6 +4,9 @@ import java.util.List;
 
 public class ControlProcessImpl implements ControlProcess {
 
+	// attributi 
+	private int id;
+
 	@Override
 	public void update(List<Probe> probes) {
 

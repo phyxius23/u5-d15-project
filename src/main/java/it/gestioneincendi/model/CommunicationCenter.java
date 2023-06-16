@@ -46,10 +46,6 @@ public class CommunicationCenter implements FireDetector {
 	}
 
 	public void fireDetectorSystem() {
-		for (Probe probe : probes) {
-			probe.setSmokeLevel(8);
-			;
-		}
 		warningObservers();
 	}
 
