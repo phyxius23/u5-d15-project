@@ -13,7 +13,7 @@ public class FireDetectorRunner implements CommandLineRunner {
 		// TODO Auto-generated method stub
 
 		// 1. 
-		ControlProcess controlProcessOne = new ControlProcessImpl();
+		ControlProcess controlProcessOne = new ControlProcessImpl(1);
 
 		Probe probeOne = ProbeFactory.createProbe(1, 9.52353, 162.38309);
 		Probe probeTwo = ProbeFactory.createProbe(2, 37.36987, 157.18530);
@@ -24,7 +24,7 @@ public class FireDetectorRunner implements CommandLineRunner {
 		communicationCenterOne.addObserver(controlProcessOne);
 
 		// 2.
-		ControlProcess controlProcessTwo = new ControlProcessImpl();
+		ControlProcess controlProcessTwo = new ControlProcessImpl(2);
 
 		Probe probeFour = ProbeFactory.createProbe(4, -53.39643, -71.85348);
 		Probe probeFive = ProbeFactory.createProbe(5, -0.72887, 28.54524);
